@@ -2,7 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 const Home = () => {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen ">
       <div className="hero-content text-center flex-col">
         <div className="max-w-md md:max-w-2xl">
           <h1 className="text-6xl font-bold">I&apos;m Swift River Forge</h1>
