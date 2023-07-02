@@ -4,19 +4,19 @@ import 'leaflet/dist/leaflet.css'
 const Contact = () => {
   
   return (
-    <div className="">
-      <h1 className="text-5xl font-bold border-l-8 p-2 ">Contact With Me</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 my-4 px-4 gap-4">
+    <div className="mt-4">
+      <h1 className="text-5xl font-bold border-l-8 p-2 pt-4">Contact With Me</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 my-4 py-6  px-4 gap-4">
         <div className=" ">
-          <MapContainer className="rounded-xl h-96 w-full" center={[22.89649700608392, 89.52244543032204]} zoom={6} scrollWheelZoom={false}>
+          <MapContainer className="rounded-xl h-96 w-full" center={[22.84487499705877, 89.53538669322856]} zoom={6} scrollWheelZoom={false}>
             <TileLayer 
               attribution='https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
-            <Marker position={[22.89649700608392, 89.52244543032204]}>
+            <Marker position={[22.84487499705877, 89.53538669322856]}>
               <Popup>
-                I'm Here🚶🏾🌍
+                I&apos;m Here🚶🏾🌍
               </Popup>
             </Marker>
 
