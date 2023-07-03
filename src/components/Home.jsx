@@ -7,7 +7,9 @@ const Home = () => {
         <div className="max-w-md md:max-w-2xl">
           <h1 className="text-6xl font-bold">I&apos;m Swift River Forge</h1>
           <h1 className="text-2xl font-bold mt-4">Front End Developer</h1>
-          <button className="btn bg mt-4">Download Resume</button>
+
+          <a href="../assets/resume/resume.pdf" download="resume.pdf" className="btn bg mt-4">Download Resume</a>
+
         </div>
         <div className="max-w-md flex items-center gap-4">
           <a href="" target="blank" className="">

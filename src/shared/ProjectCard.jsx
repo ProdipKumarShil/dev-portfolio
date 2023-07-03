@@ -1,28 +1,26 @@
-import img from '../assets/web/candyLandToys.png'
 
-const ProjectCard = () => {
+
+const ProjectCard = ({img, category, name, liveLink, clientLink, serverLink, technologies, description}) => {
+  console.log(technologies)
   return (
     <div className="card w-full  shadow-xl">
-      <figure><img src={img} alt="Shoes" /></figure>
+      <figure><img className=" object-cover" src={img} alt="Shoes" /></figure>
       <div className="card-body">
         <h2 className="card-title">
-          Candy Land Toys
-          <div className="badge badge-secondary">MERN</div>
+          {name}
+          <div className="badge badge-secondary uppercase">{category}</div>
         </h2>
-        <p>This is my mern stack project</p>
+        <p>{description}</p>
         <div className="card-actions ">
-          <div className="badge badge-outline">React</div>
-          <div className="badge badge-outline">Tailwind css</div>
-          <div className="badge badge-outline">Flowbite</div>
-          <div className="badge badge-outline">Mongo DB</div>
-          <div className="badge badge-outline">Express</div>
-          <div className="badge badge-outline">Firebase</div>
+          {
+            technologies.map((tech, idx) => <div key={idx} className="badge badge-outline">{tech}</div> )
+          }
         </div>
         <div className="space-y-2">
-          <a className='btn' href="">Live Site</a>
+          <a target="blank" className='btn' href={liveLink}>Live Site</a>
           <br />
-          <a className='btn mr-2' href="">Client Code</a>
-          <a className='btn' href="">Server Code</a>
+          <a target="blank" className='btn mr-2' href={clientLink}>Client Code</a>
+          <a target="blank" className='btn' href={serverLink}>Server Code</a>
         </div>
       </div>
     </div>
