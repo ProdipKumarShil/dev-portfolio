@@ -1,8 +1,23 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_wab4tuw', 'template_7gaymch', form.current, 'Oerpf8spE_jdi_-ml')
+      .then((result) => {
+        console.log(result.text);
+      },
+      (err) => {
+        console.log(err.text)
+      })
+  }
+
   return (
     <div className="mt-4">
       <h1 className="text-5xl font-bold border-l-8 p-2 pt-4">Contact With Me</h1>
@@ -22,13 +37,13 @@ const Contact = () => {
 
           </MapContainer>
         </div>
-        <div className="flex flex-col gap-4">
-          <input type="text" placeholder="Name" className="input border-white  w-full " />
-          <input type="text" placeholder="Subject" className="input border-white  w-full " />
-          <input type="email" placeholder="Email" className="input border-white  w-full " />
-          <textarea className="textarea border-white" cols="" rows="4" placeholder="Your Message"></textarea>
+        <form ref={form} id="contactForm" onSubmit={sendEmail} className="flex flex-col gap-4">
+          <input name="name" type="text" placeholder="Name" className="input border-white  w-full " />
+          <input name="subject" type="text" placeholder="Subject" className="input border-white  w-full " />
+          <input name="email" type="email" placeholder="Email" className="input border-white  w-full " />
+          <textarea name="message" className="textarea border-white" cols="" rows="4" placeholder="Your Message"></textarea>
           <button className="btn">Send Message</button>
-        </div>
+        </form>
         
         
       </div>
