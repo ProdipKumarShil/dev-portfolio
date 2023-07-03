@@ -5,7 +5,7 @@ const Home = () => {
     <div className="hero min-h-screen ">
       <div className="hero-content text-center flex-col">
         <div className="max-w-md md:max-w-2xl">
-          <h1 className="text-6xl font-bold">I&apos;m Swift River Forge</h1>
+          <h1 className="text-6xl font-bold">I&apos;m Prodip Kumar Shil</h1>
           <h1 className="text-2xl font-bold mt-4">Front End Developer</h1>
 
           <a href="../assets/resume/resume.pdf" download="resume.pdf" className="btn bg mt-4">Download Resume</a>
