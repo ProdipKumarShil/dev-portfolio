@@ -2,6 +2,7 @@ import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import 'leaflet/dist/leaflet.css'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Header from "../shared/Header";
 
 const Contact = () => {
   const form = useRef()
@@ -20,8 +21,8 @@ const Contact = () => {
 
   return (
     <div className="mt-4">
-      <h1 className="text-5xl font-bold border-l-8 p-2 pt-4">Contact With Me</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 my-4 py-6  px-4 gap-4">
+      <Header text="Contact With Me"></Header>
+      <div className="grid grid-cols-1 md:grid-cols-2  py-6  px-4 gap-4">
         <div className=" ">
           <MapContainer className="rounded-xl h-96 w-full" center={[22.84487499705877, 89.53538669322856]} zoom={6} scrollWheelZoom={false}>
             <TileLayer 

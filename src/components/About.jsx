@@ -1,10 +1,11 @@
 
 import myPic2 from '../assets/myPic/linked.png'
+import Header from '../shared/Header';
 
 const About = () => {
   return (
     <div className="my-12">
-      <h1 className="text-5xl font-bold border-l-8 p-2 pt-4 mb-4">About Me</h1>
+      <Header text="About Me"></Header>
     <div className="grid grid-cols-1 md:grid-cols-2 items-center">
       
       <div className="p-8">

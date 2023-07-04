@@ -9,11 +9,12 @@ import nodejs from '../assets/logos/nodejs.png'
 import react from '../assets/logos/react.png'
 import tailwindcss from '../assets/logos/tailwindcss.png'
 import SkillCard from '../shared/SkillCard';
+import Header from '../shared/Header'
 
 const Skills = () => {
   return (
     <div className="px-2">
-      <h1 className="text-5xl font-bold border-l-8 p-2 ">My Skills</h1>
+      <Header text="My Skills"></Header>
       <div className="flex flex-wrap px-8 gap-4 justify-center py-6">
         {/* skill card */}
         <SkillCard img={html} text="html"></SkillCard>

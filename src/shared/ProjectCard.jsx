@@ -17,10 +17,10 @@ const ProjectCard = ({img, category, name, liveLink, clientLink, serverLink, tec
           }
         </div>
         <div className="space-y-2">
-          <a target="blank" className='btn' href={liveLink}>Live Site</a>
+          <a target="_blank" rel="noopener noreferrer" className='btn' href={liveLink}>Live Site</a>
           <br />
-          <a target="blank" className='btn mr-2' href={clientLink}>Client Code</a>
-          <a target="blank" className='btn' href={serverLink}>Server Code</a>
+          <a target="_blank" rel="noopener noreferrer" className='btn mr-2' href={clientLink}>Client Code</a>
+          <a target="_blank" rel="noopener noreferrer" className='btn' href={serverLink}>Server Code</a>
         </div>
       </div>
     </div>

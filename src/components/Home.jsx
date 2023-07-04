@@ -12,13 +12,13 @@ const Home = () => {
 
         </div>
         <div className="max-w-md flex items-center gap-4">
-          <a href="" target="blank" className="">
+          <a href="https://github.com/ProdipKumarShil" rel="noopener noreferrer" target="_blank" className="">
             <AiFillGithub className="text-4xl  hover:scale-125 duration-700 hover:animate-bounce"></AiFillGithub>
           </a>
-          <a href="" target="blank" className="">
+          <a href="https://www.linkedin.com/in/prodip-kumar-shil-4159b7280/" rel="noopener noreferrer" target="_blank" className="">
             <AiFillLinkedin className="text-4xl  hover:scale-125 duration-700  hover:animate-bounce"></AiFillLinkedin>
           </a>
-          <a href="" target="blank" className="">
+          <a href="https://www.facebook.com/prodip.kumar.7965" rel="noopener noreferrer" target="_blank" className="">
             <BsFacebook className="text-4xl  hover:scale-125 duration-700 hover:animate-bounce"></BsFacebook>
           </a>
         </div>
