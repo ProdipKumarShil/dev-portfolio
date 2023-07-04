@@ -8,7 +8,7 @@ const Home = () => {
           <h1 className="text-6xl font-bold">I&apos;m Prodip Kumar Shil</h1>
           <h1 className="text-2xl font-bold mt-4">Front End Developer</h1>
 
-          <a href="../assets/resume/resume.pdf" download="resume.pdf" className="btn bg mt-4">Download Resume</a>
+          <a href="/public/resume/resume.pdf" download="resume.pdf" className="btn bg mt-4">Download Resume</a>
 
         </div>
         <div className="max-w-md flex items-center gap-4">
