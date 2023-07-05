@@ -4,7 +4,7 @@ import Button from "./Button";
 const ProjectCard = ({img, category, name, liveLink, clientLink, serverLink, technologies, description}) => {
   console.log(technologies)
   return (
-    <div className="card w-full  shadow-xl bg-base-200">
+    <div data-aos="zoom-in" className="card w-full  shadow-xl bg-base-200">
       <figure><img className=" object-cover" src={img} alt="Shoes" /></figure>
       <div className="card-body">
         <h2 className="card-title">

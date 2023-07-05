@@ -11,7 +11,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className="max-w-7xl mx-auto bg-img backdrop-blur-3xl">
+    <div className="max-w-7xl overflow-hidden mx-auto bg-img backdrop-blur-3xl">
       <Navbar></Navbar>
       <Home></Home>
       <Skills></Skills>

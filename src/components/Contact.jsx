@@ -22,7 +22,7 @@ const Contact = () => {
   return (
     <div id="contact" className="mt-4">
       <Header text="Contact With Me"></Header>
-      <div className="grid grid-cols-1 md:grid-cols-2  py-6  px-4 gap-4">
+      <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-2  py-6  px-4 gap-4">
         <div className=" ">
           <MapContainer className="rounded-xl h-96 w-full" center={[22.84487499705877, 89.53538669322856]} zoom={6} scrollWheelZoom={false}>
             <TileLayer 
@@ -38,7 +38,7 @@ const Contact = () => {
 
           </MapContainer>
         </div>
-        <form ref={form} id="contactForm" onSubmit={sendEmail} className="flex flex-col gap-4">
+        <form data-aos="zoom-in" ref={form} id="contactForm" onSubmit={sendEmail} className="flex flex-col gap-4">
           <input name="name" type="text" placeholder="Name" className="input border-white focus:border-[#1887c7]  w-full " />
           <input name="subject" type="text" placeholder="Subject" className="input border-white focus:border-[#1887c7] w-full " />
           <input name="email" type="email" placeholder="Email" className="input border-white focus:border-[#1887c7] w-full " />
