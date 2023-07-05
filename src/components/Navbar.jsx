@@ -12,13 +12,10 @@ const navItems = <>
 
 const Navbar = () => {
 
-  const [menu, setMenu] = useState(true)
-  const handleMenu = () => {
-    setMenu(!menu)
-  }
+  
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar ">
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">PK</a>
       </div>

@@ -9,7 +9,7 @@ import Footer from "./components/Footer"
 function App() {
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto bg-img backdrop-blur-3xl">
       <Navbar></Navbar>
       <Home></Home>
       <Skills></Skills>

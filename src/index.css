@@ -9,4 +9,17 @@
 .preserve-3d {
     transform-style: preserve-3d;
 }
+.bg-img{
+    background-image: url('../src/assets/bg/bg8.png');
+    background-repeat: repeat;
+}
 
+.primary-border {
+    @apply border-[#1887C7]
+}
+.primary-text{
+    @apply text-[#1887C7]
+}
+.primary-bg{
+    @apply bg-[#1887C7]
+}

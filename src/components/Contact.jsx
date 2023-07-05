@@ -39,10 +39,10 @@ const Contact = () => {
           </MapContainer>
         </div>
         <form ref={form} id="contactForm" onSubmit={sendEmail} className="flex flex-col gap-4">
-          <input name="name" type="text" placeholder="Name" className="input border-white  w-full " />
-          <input name="subject" type="text" placeholder="Subject" className="input border-white  w-full " />
-          <input name="email" type="email" placeholder="Email" className="input border-white  w-full " />
-          <textarea name="message" className="textarea border-white" cols="" rows="4" placeholder="Your Message"></textarea>
+          <input name="name" type="text" placeholder="Name" className="input border-white focus:border-[#1887c7]  w-full " />
+          <input name="subject" type="text" placeholder="Subject" className="input border-white focus:border-[#1887c7] w-full " />
+          <input name="email" type="email" placeholder="Email" className="input border-white focus:border-[#1887c7] w-full " />
+          <textarea name="message" className="textarea border-white focus:border-[#1887c7]" cols="" rows="4" placeholder="Your Message"></textarea>
           <button className="btn">Send Message</button>
         </form>
         
