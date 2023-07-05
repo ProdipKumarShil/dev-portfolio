@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    @apply text-white
+}
 
 .transform-z{
    transform: translateZ(60px);

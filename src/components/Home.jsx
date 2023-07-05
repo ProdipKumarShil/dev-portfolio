@@ -1,15 +1,15 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
+import Button from "../shared/Button";
 const Home = () => {
   return (
     <div className="hero min-h-screen ">
       <div className="hero-content text-center flex-col">
         <div className="max-w-md md:max-w-2xl">
           <h1 className="text-6xl font-bold">I&apos;m Prodip Kumar Shil</h1>
-          <h1 className="text-2xl font-bold mt-4">Front End Developer</h1>
+          <h1 className="text-2xl font-bold my-4">Front End Developer</h1>
 
-          <a href="/public/resume/resume.pdf" download="resume.pdf" className="btn bg mt-4">Download Resume</a>
-
+          <Button  text={"Download Resume"} link="/public/resume/resume.pdf"></Button>
         </div>
         <div className="max-w-md flex items-center gap-4">
           <a href="https://github.com/ProdipKumarShil" rel="noopener noreferrer" target="_blank" className="">

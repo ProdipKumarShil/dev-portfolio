@@ -1,9 +1,10 @@
+import Button from "./Button";
 
 
 const ProjectCard = ({img, category, name, liveLink, clientLink, serverLink, technologies, description}) => {
   console.log(technologies)
   return (
-    <div className="card w-full  shadow-xl">
+    <div className="card w-full  shadow-xl bg-base-200">
       <figure><img className=" object-cover" src={img} alt="Shoes" /></figure>
       <div className="card-body">
         <h2 className="card-title">
@@ -17,10 +18,13 @@ const ProjectCard = ({img, category, name, liveLink, clientLink, serverLink, tec
           }
         </div>
         <div className="space-y-2">
-          <a target="_blank" rel="noopener noreferrer" className='btn' href={liveLink}>Live Site</a>
+          <Button text="Live Site" link={liveLink}></Button>
           <br />
-          <a target="_blank" rel="noopener noreferrer" className='btn mr-2' href={clientLink}>Client Code</a>
-          <a target="_blank" rel="noopener noreferrer" className='btn' href={serverLink}>Server Code</a>
+          <div className="flex gap-2">
+          <Button text="Client Code" link={clientLink}></Button>
+
+          <Button text="Server Code" link={serverLink}></Button>
+          </div>
         </div>
       </div>
     </div>
