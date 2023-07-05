@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { CgMenuRight, CgMenuRightAlt } from "react-icons/cg";
+import {  CgMenuRightAlt } from "react-icons/cg";
 import { HashLink } from "react-router-hash-link";
 
 const navItems = <>
