@@ -13,7 +13,7 @@ import Header from '../shared/Header'
 
 const Skills = () => {
   return (
-    <div className="px-2">
+    <div id='skills' className="px-2">
       <Header text="My Skills"></Header>
       <div className="flex flex-wrap px-8 gap-4 justify-center py-6">
         {/* skill card */}

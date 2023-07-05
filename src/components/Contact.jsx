@@ -20,7 +20,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="mt-4">
+    <div id="contact" className="mt-4">
       <Header text="Contact With Me"></Header>
       <div className="grid grid-cols-1 md:grid-cols-2  py-6  px-4 gap-4">
         <div className=" ">

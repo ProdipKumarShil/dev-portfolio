@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { CgMenuRight, CgMenuRightAlt } from "react-icons/cg";
-
+import { HashLink } from "react-router-hash-link";
 
 const navItems = <>
-  <li><a>Home</a></li>
-  <li><a>Skills</a></li>
-  <li><a>Projects</a></li>
-  <li><a>About Me</a></li>
-  <li><a>Contact With Me</a></li>
+  <li><HashLink smooth to="/">Home</HashLink></li>
+  <li><HashLink smooth to="#skills">Skills</HashLink> </li>
+  <li><HashLink smooth to="#about">About Me</HashLink></li>
+  <li><HashLink smooth to="#projects">Projects</HashLink></li>
+  <li><HashLink smooth to="#contact">Contact With Me</HashLink></li>
 </>
 
 const Navbar = () => {
@@ -24,18 +24,6 @@ const Navbar = () => {
           {navItems}
         </ul>
       </div>
-      {/* <div onClick={handleMenu} className="flex-none md:hidden cursor-pointer active:scale-95 hover:bg-zinc-300 rounded-lg">
-        {menu ? <CgMenuRightAlt className="scale-150 m-4" /> : <CgMenuRight className="scale-150 m-4" />}
-      </div> */}
-      {/* <div className="relative">
-        {
-          !menu && <div className="absolute md:hidden -right-2 top-8 p-4 rounded-lg bg-green-500 transition ease-in-out delay-150 ">
-          <ul className="menu menu-horizontal px-1 md:hidden inline-block">
-            {navItems}
-          </ul>
-        </div>
-      }
-      </div> */}
       <div className="drawer drawer-end md:hidden justify-end z-10">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">

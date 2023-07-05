@@ -4,7 +4,7 @@ import Header from '../shared/Header';
 
 const About = () => {
   return (
-    <div className="my-12">
+    <div id='about' className="my-12">
       <Header text="About Me"></Header>
     <div className="grid grid-cols-1 md:grid-cols-2 items-center">
       

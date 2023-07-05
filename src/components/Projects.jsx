@@ -7,7 +7,7 @@ import Header from "../shared/Header";
 const Projects = () => {
  
   return (
-    <div >
+    <div id="projects">
       <Header text="My Projects"></Header>
       <div className="grid mx-4  md:grid-cols-3 py-4 gap-4">
         <ProjectCard img={chefs} category='react' name='Indiana Chefs' liveLink='https://ph-assignment-10-75696.web.app/' clientLink='https://github.com/ProdipKumarShil/ph-assignment-10-client' serverLink='https://github.com/ProdipKumarShil/ph-assignment-10-server' technologies={["React", "Tailwind css", "Flowbite", "Firebase"]}></ProjectCard>

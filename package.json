@@ -22,6 +22,7 @@
     "react-leaflet": "^4.2.1",
     "react-parallax-tilt": "^1.7.151",
     "react-router-dom": "^6.14.0",
+    "react-router-hash-link": "^2.4.3",
     "scss": "^0.2.4",
     "sort-by": "^1.2.0"
   },
